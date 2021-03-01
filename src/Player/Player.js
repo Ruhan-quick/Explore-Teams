@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserPlus } from "@fortawesome/free-solid-svg-icons";
 
 const Player = (props) => {
-  console.log(props);
+  //   console.log(props);
   const { name, salary, rating, club, country, img } = props.player;
   return (
     <div className="single-player">

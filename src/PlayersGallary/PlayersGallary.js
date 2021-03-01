@@ -12,7 +12,7 @@ const PlayersGallary = () => {
   console.log(players.length);
 
   const handleAddPlayers = (player) => {
-    console.log("Player added.", player);
+    // console.log("Player added.", player);
     let newTeam = [...team, player];
     let unique = [...new Set(newTeam)];
     setTeam(unique);
@@ -25,13 +25,14 @@ const PlayersGallary = () => {
         <div className="player-container">
           {players.map((player) => (
             <Player
+              key={Math.random()}
               handleAddPlayers={handleAddPlayers}
               player={player}
             ></Player>
           ))}
         </div>
         <div className="team">
-          <Team team={team}></Team>
+          <Team key={Math.random()} team={team}></Team>
         </div>
       </div>
     </div>
