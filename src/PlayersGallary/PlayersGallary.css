@@ -1,0 +1,18 @@
+.players-gallary {
+  display: flex;
+  border: 3px solid rebeccapurple;
+}
+
+.player-container {
+  width: 70%;
+  border: 2px solid red;
+  margin: 5px;
+  padding: 5px;
+}
+
+.team {
+  border: 2px solid yellowgreen;
+  margin: 5px;
+  padding: 5px;
+  width: 30%;
+}
